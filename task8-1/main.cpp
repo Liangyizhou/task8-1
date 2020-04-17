@@ -18,6 +18,7 @@ int main()
 	findContours(binMat, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
 	for (int i = 0; i < contours.size(); i++)
 	{
+
 		//绘制最小外接四边形
 		drawContours(dstMat, contours, i, Scalar(0, 255, 255), 1, 8);
 		//获得最小外接四边形
